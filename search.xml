@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>01.开篇故事</title>
+      <link href="/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/01.%E5%BC%80%E7%AF%87%E6%95%85%E4%BA%8B/"/>
+      <url>/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/01.%E5%BC%80%E7%AF%87%E6%95%85%E4%BA%8B/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/Pasted%20image%2020230224170920.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>01.什么是进程？</title>
+      <link href="/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/02.%E8%BF%9B%E7%A8%8B/01.%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%9B%E7%A8%8B%EF%BC%9F/"/>
+      <url>/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/02.%E8%BF%9B%E7%A8%8B/01.%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%9B%E7%A8%8B%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>01.什么是协程？</title>
+      <link href="/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/04.%E5%8D%8F%E7%A8%8B/01.%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E7%A8%8B%EF%BC%9F/"/>
+      <url>/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/04.%E5%8D%8F%E7%A8%8B/01.%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E7%A8%8B%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<p>协程（coroutine）也可以被称为微线程，是一种用户态的上下文切换技术（说人话：在一个线程内实现不同代码块来回切换执行的一种技术）。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>01.协程的意义？</title>
+      <link href="/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/04.%E5%8D%8F%E7%A8%8B/02.%E5%8D%8F%E7%A8%8B%E7%9A%84%E6%84%8F%E4%B9%89%EF%BC%9F/"/>
+      <url>/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/04.%E5%8D%8F%E7%A8%8B/02.%E5%8D%8F%E7%A8%8B%E7%9A%84%E6%84%8F%E4%B9%89%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>01.什么是线程？</title>
+      <link href="/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/03.%E7%BA%BF%E7%A8%8B/01.%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B%EF%BC%9F/"/>
+      <url>/2023/03/10/%E5%BC%80%E5%8F%91/Python/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/03.%E7%BA%BF%E7%A8%8B/01.%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/02.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9A%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/"/>
+      <url>/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/02.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9A%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">pip install <span class="hljs-string">&quot;faust-streaming[rocksdb,uvloop,fast,redis,aerospike]&quot;</span><br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/01.Faust/"/>
+      <url>/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/01.Faust/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Faust"><a href="#Faust" class="headerlink" title="Faust"></a>Faust</h1><p>Faust是由<a href="http://robinhood.com/">Robinhood</a>开源的一个用于构建高性能分布式流处理应用的库，它是<a href="https://kafka.apache.org/documentation/streams">Kafka Streams</a>的Python实现。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/06.Falus%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9A%E8%A1%A8%E5%92%8C%E7%AA%97%E5%8F%A3/"/>
+      <url>/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/06.Falus%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9A%E8%A1%A8%E5%92%8C%E7%AA%97%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/05.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%BA%90/"/>
+      <url>/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/05.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%BA%90/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/04.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9AStreams/"/>
+      <url>/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/04.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9AStreams/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/03.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9AAgents/"/>
+      <url>/2023/02/24/%E5%BC%80%E5%8F%91/Python/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/02.%E6%B5%81%E5%A4%84%E7%90%86/01.Faust/03.Faust%E6%B5%81%E5%A4%84%E7%90%86%EF%BC%9AAgents/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

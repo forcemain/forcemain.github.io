@@ -207,6 +207,8 @@
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ mongod<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><code>mongod</code> 在没有参数的情况下会使用默认数据目录<code>/data/db</code>（Windows系统为<code>&lt;安装盘&gt;:\data\db</code>）。如果数据目录不存在或不可写，服务器会启动失败。因此，在启动MongoDB前，需要先创建数据目录，并确保对该目录有写权限，这点非常重要。</p>
+<p>启动时，服务器会打印版本和系统信息，然后等待连接。默认情况下，MongoDB监听 <code>27017</code> 端口，如果端口被占用，启动将失败。通常，这是由于已经有一个MongoDB实例在运行了。</p>
+<p><code>mongod</code> 还会启动一个非常基本的HTTP服务器，监听 数字比主端口号高1000的端口，也就是<code>28017</code> 端口。这意味着，通过浏览器访问</p>
 
 	  <div class="article-footer-copyright">
 
@@ -222,7 +224,7 @@
     <a type="button" class="prev btn btn-default disabled">Read Prev</a>
     
     
-    <a href="/2023/03/14/读书笔记/数据库/MongoDB/《MongoDB权威指南（第2版）》/第 1 部分  MongoDB 介绍/第 1 章 MongoDB介绍/" type="button" class="next btn btn-default ">Read Next</a>
+    <a href="/2023/03/14/读书笔记/数据库/MongoDB/《MongoDB权威指南（第2版）》/第 1 部分  MongoDB 介绍/第 1 章 MongoDB介绍/?" type="button" class="next btn btn-default ">Read Next</a>
     
     
 </div>

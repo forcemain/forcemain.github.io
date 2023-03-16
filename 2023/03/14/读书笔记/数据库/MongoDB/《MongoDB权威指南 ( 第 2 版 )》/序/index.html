@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>序 | Forcemain</title>
+  <meta name="author" content="forcemain">
+  
+  <meta name="description" content="10年前，没人能预见互联网的发展会给关系型数据库带来如此多的挑战。在此期间，我亲身经历了在快速发展的大型互联网公司应用MySQL的过程，开始时只有很少的数据，一台服务器就可以了。然后就得建立备份，以便应对大量的读取和不时的宕机。用不了多长时间，就得加一个缓存层，调整所有的查询，投入更多的硬件。
+
+最后，你会发现自己需要将数据切分到多个集群上，并重新构建大量的应用逻辑以适应这种切分。之后不久，你又会发现被自己数月前设计的数据库结构限制住了。
+
+怎么会呢？这是因为现在集群中的数据太多，需要更改模式，会花费很长时间，也需要DBA投入相当多的宝贵时间。在代码中处理要简单一些，但也需要小型开发团队数月的努力。最后，你会不断地拷问自己有没有更好的方法，或者为什么没有在核心数据库服务器中内置更多此类功能。"> 
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="序"/>
+  <meta property="og:site_name" content="Forcemain"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Forcemain" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Forcemain</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class="fa fa-user"></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> 序</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p>10年前，没人能预见互联网的发展会给关系型数据库带来如此多的挑战。在此期间，我亲身经历了在快速发展的大型互联网公司应用MySQL的过程，开始时只有很少的数据，一台服务器就可以了。然后就得建立备份，以便应对大量的读取和不时的宕机。用不了多长时间，就得加一个缓存层，调整所有的查询，投入更多的硬件。</p>
+<p>最后，你会发现自己需要将数据切分到多个集群上，并重新构建大量的应用逻辑以适应这种切分。之后不久，你又会发现被自己数月前设计的数据库结构限制住了。</p>
+<p>怎么会呢？这是因为现在集群中的数据太多，需要更改模式，会花费很长时间，也需要DBA投入相当多的宝贵时间。在代码中处理要简单一些，但也需要小型开发团队数月的努力。最后，你会不断地拷问自己有没有更好的方法，或者为什么没有在核心数据库服务器中内置更多此类功能。</p>
+<p>为了应对现在Web应用的数据膨胀，开源社区像以往一样提供了大多的 “好方法”。从内存中的键值型存储到可以使用SQL的MySQL&#x2F;InnoDB变种等复杂方法，无所不有。但选择多了，做出正确的选择反而更难了。我自己就研究过其中很多种。</p>
+<p>MongoDB的实用性着实让人着迷。MongoDB并不去迎合所有人的全部需求。它在功能和复杂性之间取得了很好的平衡，并且大大简化了原先十分复杂的任务。也就是说，它具备支撑今天主流Web应用的关键功能：索引，复制，分片，丰富的查询语法，特别灵活的数据模型。与此同时，还不牺牲速度。</p>
+<p>秉承MongoDB自身的风格，本书简洁明快，通俗易懂。MongoDB新用户通过阅读第 1 章，马上就能入门，而有经验的用户则可以体验到本书的广度和权威性。对于流行的客户端API和高级的管理主题，如复制，备份和分片，本书都是权威参考。</p>
+<p>根据我最近每天使用MongoDB的经验，我相信本书会始终不离我左右，从最初安装到进行分片或备份式集群的产品化部署，它都是我最好的助手。任何想仔细研究使用MongoDB的人都需要这本重要的参考书。</p>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+	<div>
+  	<div>
+	<div class="pagination">
+    
+    
+    <a href="/2023/03/14/读书笔记/数据库/MongoDB/《MongoDB权威指南 ( 第 2 版 )》/前言/" type="button" class="prev btn btn-default">Read Prev</a>
+    
+    
+    <a href="/2023/03/14/读书笔记/数据库/MongoDB/《MongoDB权威指南 ( 第 2 版 )》/内容提要/" type="button" class="next btn btn-default ">Read Next</a>
+    
+    
+</div>
+
+	</div>
+	</div>
+	
+	<!-- comment -->
+	
+		<section id="comments" class="comments">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script> 
+<div id="gitalk-container"></div>
+<script>
+var gitalkConfig = {"enable":true,"clientID":"85f6dc6eb77f33f85d4b","clientSecret":"0145804617fa807183fbea4db39c23115c67c99d","repo":"forcemain.github.io","owner":"forcemain","admin":["forcemain"],"id":"location.pathname","distractionFreeMode":true}
+gitalkConfig.id=md5(location.pathname)
+var gitalk = new Gitalk(gitalkConfig)
+  
+  gitalk.render('gitalk-container')
+
+  </script>
+		</section>
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2023-03-14 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/《MongoDB权威指南（第2版）》/">《MongoDB权威指南（第2版）》<span>5</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/《MongoDB权威指南（第2版）》/">《MongoDB权威指南（第2版）》<span>5</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+		   <span class="toc-title">Contents</span>
+			
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+		
+
+	</div>
+	
+		
+
+</div><!-- row -->
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <!-- <footer> <p>
+  
+  &copy; 2023 forcemain's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer> -->
+</div> <!-- container-narrow -->
+  <!--  -->
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

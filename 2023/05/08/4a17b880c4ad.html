@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>《Golang tutorial series》 1.介绍与安装 | forcemain</title>
+  <meta name="author" content="forcemain">
+  
+  <meta name="description" content="这是我们 Golang tutorial series 的第一个教程。本教程介绍了 Go，并讨论了选择 Go 相对于其它编程语言的优势。我们还将学习如何在 MacOS，Windows 和 Linux 中安装 Go。"> 
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="《Golang tutorial series》 1.介绍与安装"/>
+  <meta property="og:site_name" content="forcemain"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="forcemain" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/index.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">forcemain</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class="fa fa-user"></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> 《Golang tutorial series》 1.介绍与安装</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p>这是我们 <a href="./34725805bd6c.html">Golang tutorial series</a> 的第一个教程。本教程介绍了 Go，并讨论了选择 Go 相对于其它编程语言的优势。我们还将学习如何在 MacOS，Windows 和 Linux 中安装 Go。</p>
+<h1 id="Golang-是什么"><a href="#Golang-是什么" class="headerlink" title="Golang 是什么"></a>Golang 是什么</h1><p>Go 亦称为 Golang（译注：按照 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Rob_Pike">Rob Pike</a> 说法，语言叫做 Go，Golang 只是官方网站的网址），是由 Google 开发的一种开源的编译型的静态语言。</p>
+<p>Golang 的主要关注点是使得高可用性和可扩展性的 Web 应用的开发变得简便容易。（译注：Go 的定位是系统编程语言，只是对 Web 开发支持较好）</p>
+<h1 id="为什么选择Golang"><a href="#为什么选择Golang" class="headerlink" title="为什么选择Golang"></a>为什么选择Golang</h1><p>既然有很多其他编程语言可以做同样的工作，如 Python，Ruby，Nodejs 等，为什么要选择 Golang 作为服务端编程语言？</p>
+<p>以下是我使用 Go 语言时发现的一些优点：</p>
+<ul>
+<li>并发是语言的一部分（译注：并非通过标准库实现），所以编写并发程序会是一件很容易的事。后续教程将会讨论到，并发是通过 Goroutines 和 channels 机制实现的。</li>
+<li>Golang 是一种编译型语言。源代码会编译为二进制机器码。</li>
+<li>Golang 使用垃圾收集器自动回收分配的内存。</li>
+<li>Go 编译器支持静态链接。所有 Go 代码都可以静态链接为一个大的二进制文件（译注：相对现在的磁盘空间，其实根本不大），它可以很容易部署到云服务器中，而不必担心依赖关系。</li>
+</ul>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>Golang 支持三个平台：Mac，Windows 和 Linux（译注：不只是这三个，也支持其他主流平台）。你可以在 <a target="_blank" rel="noopener" href="https://golang.org/dl/">https://golang.org/dl/</a> 中下载相应平台的二进制文件。（译注：因为众所周知的原因，如果下载不了，请到 <a target="_blank" rel="noopener" href="https://studygolang.com/dl">https://studygolang.com/dl</a> 下载）</p>
+<h2 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h2><p>在 <a target="_blank" rel="noopener" href="https://golang.org/dl/">https://golang.org/dl/</a> 下载安装程序。双击开始安装并且遵循安装提示，会将 Golang 安装到 <code>/usr/local/go</code> 目录下，同时 <code>/usr/local/go/bin</code> 文件夹也会被添加到 <code>PATH</code> 环境变量中。</p>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>在 <a target="_blank" rel="noopener" href="https://golang.org/dl/">https://golang.org/dl/</a> 下载 MSI 安装程序。双击开始安装并且遵循安装提示，会将 Golang 安装到 <code>C:\Go</code> 目录下，同时 <code>c:\Go\bin</code> 目录也会被添加到你的 <code>PATH</code> 环境变量中。</p>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p>在 <a target="_blank" rel="noopener" href="https://golang.org/dl/">https://golang.org/dl/</a> 下载 tar 文件，并解压到 <code>/usr/local</code>。</p>
+<p>请添加 <code>/usr/local/go/bin</code> 到 <code>PATH</code> 环境变量中。Go 就已经成功安装在 <code>Linux</code> 上了。</p>
+<h1 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h1><p>请在终端中执行<code>go version</code>，它将输出已安装的 Go 版本。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ go version
+go version go1.20.3 windows/amd64<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<p>在本系列下一部分 <a href="">《Golang tutorial series》 2.Hello World</a> 中，我们将会建立 Go 的工作区，编写我们第一个 Go 程序。</p>
+<p>请提供您宝贵的反馈和意见。感谢您的阅读。</p>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+    
+    <a type="button" class="prev btn btn-default disabled">Read Prev</a>
+    
+    
+    <a href="/2023/05/08/34725805bd6c.html" type="button" class="next btn btn-default ">Read Next</a>
+    
+
+    
+</div>
+<div class="clearfix"></div>
+
+    </center>
+	</div>
+	
+		<section id="comments" class="comments">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script> 
+<div id="gitalk-container"></div>
+<script>
+var gitalkConfig = {"enable":true,"clientID":"85f6dc6eb77f33f85d4b","clientSecret":"0145804617fa807183fbea4db39c23115c67c99d","repo":"forcemain.github.io","owner":"forcemain","admin":["forcemain"],"id":"location.pathname","distractionFreeMode":true}
+gitalkConfig.id=md5(location.pathname)
+var gitalk = new Gitalk(gitalkConfig)
+  
+  gitalk.render('gitalk-container')
+
+  </script>
+		</section>
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2023-05-08 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/《Golang-tutorial-series》/">《Golang tutorial series》<span>2</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/Go/">Go<span>2</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+		   <span class="toc-title">Contents</span>
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Golang-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-article-text">Golang 是什么</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9Golang"><span class="toc-article-text">为什么选择Golang</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-article-text">安装</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#Mac-OS"><span class="toc-article-text">Mac OS</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#Windows"><span class="toc-article-text">Windows</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#Linux"><span class="toc-article-text">Linux</span></a></li></ol></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#%E9%AA%8C%E8%AF%81%E5%AE%89%E8%A3%85"><span class="toc-article-text">验证安装</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+		
+
+	</div>
+	
+		
+
+</div><!-- row -->
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer>  </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/search.js"></script> 
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

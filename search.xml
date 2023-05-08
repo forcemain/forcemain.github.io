@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>《Golang tutorial series》 1.介绍与安装</title>
+      <link href="/2023/05/08/4a17b880c4ad.html"/>
+      <url>/2023/05/08/4a17b880c4ad.html</url>
+      
+        <content type="html"><![CDATA[<p>这是我们 <a href="./34725805bd6c.html">Golang tutorial series</a> 的第一个教程。本教程介绍了 Go，并讨论了选择 Go 相对于其它编程语言的优势。我们还将学习如何在 MacOS，Windows 和 Linux 中安装 Go。</p><h1 id="Golang-是什么"><a href="#Golang-是什么" class="headerlink" title="Golang 是什么"></a>Golang 是什么</h1><p>Go 亦称为 Golang（译注：按照 <a href="https://en.wikipedia.org/wiki/Rob_Pike">Rob Pike</a> 说法，语言叫做 Go，Golang 只是官方网站的网址），是由 Google 开发的一种开源的编译型的静态语言。</p><p>Golang 的主要关注点是使得高可用性和可扩展性的 Web 应用的开发变得简便容易。（译注：Go 的定位是系统编程语言，只是对 Web 开发支持较好）</p><h1 id="为什么选择Golang"><a href="#为什么选择Golang" class="headerlink" title="为什么选择Golang"></a>为什么选择Golang</h1><p>既然有很多其他编程语言可以做同样的工作，如 Python，Ruby，Nodejs 等，为什么要选择 Golang 作为服务端编程语言？</p><p>以下是我使用 Go 语言时发现的一些优点：</p><ul><li>并发是语言的一部分（译注：并非通过标准库实现），所以编写并发程序会是一件很容易的事。后续教程将会讨论到，并发是通过 Goroutines 和 channels 机制实现的。</li><li>Golang 是一种编译型语言。源代码会编译为二进制机器码。</li><li>Golang 使用垃圾收集器自动回收分配的内存。</li><li>Go 编译器支持静态链接。所有 Go 代码都可以静态链接为一个大的二进制文件（译注：相对现在的磁盘空间，其实根本不大），它可以很容易部署到云服务器中，而不必担心依赖关系。</li></ul><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>Golang 支持三个平台：Mac，Windows 和 Linux（译注：不只是这三个，也支持其他主流平台）。你可以在 <a href="https://golang.org/dl/">https://golang.org/dl/</a> 中下载相应平台的二进制文件。（译注：因为众所周知的原因，如果下载不了，请到 <a href="https://studygolang.com/dl">https://studygolang.com/dl</a> 下载）</p><h2 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h2><p>在 <a href="https://golang.org/dl/">https://golang.org/dl/</a> 下载安装程序。双击开始安装并且遵循安装提示，会将 Golang 安装到 <code>/usr/local/go</code> 目录下，同时 <code>/usr/local/go/bin</code> 文件夹也会被添加到 <code>PATH</code> 环境变量中。</p><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>在 <a href="https://golang.org/dl/">https://golang.org/dl/</a> 下载 MSI 安装程序。双击开始安装并且遵循安装提示，会将 Golang 安装到 <code>C:\Go</code> 目录下，同时 <code>c:\Go\bin</code> 目录也会被添加到你的 <code>PATH</code> 环境变量中。</p><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p>在 <a href="https://golang.org/dl/">https://golang.org/dl/</a> 下载 tar 文件，并解压到 <code>/usr/local</code>。</p><p>请添加 <code>/usr/local/go/bin</code> 到 <code>PATH</code> 环境变量中。Go 就已经成功安装在 <code>Linux</code> 上了。</p><h1 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h1><p>请在终端中执行<code>go version</code>，它将输出已安装的 Go 版本。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ go versiongo version go1.20.3 windows/amd64<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>在本系列下一部分 <a href="">《Golang tutorial series》 2.Hello World</a> 中，我们将会建立 Go 的工作区，编写我们第一个 Go 程序。</p><p>请提供您宝贵的反馈和意见。感谢您的阅读。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 《Golang tutorial series》 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《Golang tutorial series》 目录</title>
+      <link href="/2023/05/08/34725805bd6c.html"/>
+      <url>/2023/05/08/34725805bd6c.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><a href="./4a17b880c4ad.html">1.介绍与安装.md</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 《Golang tutorial series》 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Go </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

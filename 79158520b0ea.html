@@ -118,15 +118,15 @@
 <hr>
 
 <h1 id="建立Go工作区"><a href="#建立Go工作区" class="headerlink" title="建立Go工作区"></a>建立Go工作区</h1><p>在编写代码之前，我们首先应该建立 Go 的工作区（Workspace）。</p>
-<p>在 <strong>Mac 或 Linux</strong> 操作系统下，Go 工作区应该设置在 <strong>$HOME&#x2F;go</strong>。所以我们要在 <strong>$HOME</strong> 目录下创建 <strong>go</strong> 目录。</p>
-<p>而在 <strong>Windows</strong> 下，工作区应该设置在 <strong>C:\Users{YourName}\go</strong>。所以请将 <strong>go</strong> 目录放置在 <strong>C:\Users{YourName}</strong> 下。</p>
-<p>其实也可以通过设置 GOPATH 环境变量，用其它目录来作为工作区。但为了简单起见，我们采用上面提到的放置方法。</p>
-<p>所有 Go 源文件都应该放置在工作区里的 <strong>src</strong> 目录下。请在刚添加的 <strong>go</strong> 目录下面创建目录 <strong>src</strong>。</p>
-<p>所有 Go 项目都应该依次在 src 里面创建。我们在 src 里面创建一个目录 <strong>hello</strong> 来放置整个 hello world 项目。</p>
+<p>在 <em>Mac 或 Linux</em> 操作系统下，Go 工作区应该设置在 <em>$HOME&#x2F;go</em>。所以我们要在 <em>$HOME</em> 目录下创建 <em>go</em> 目录。</p>
+<p>而在 <em>Windows</em> 下，工作区应该设置在 <em>C:\Users{YourName}\go</em>。所以请将 <em>go</em> 目录放置在 <em>C:\Users{YourName}</em> 下。</p>
+<p>其实也可以通过设置 <code>GOPATH</code> 环境变量，用其它目录来作为工作区。但为了简单起见，我们采用上面提到的放置方法。</p>
+<p>所有 Go 源文件都应该放置在工作区里的 <em>src</em> 目录下。请在刚添加的 <em>go</em> 目录下面创建目录 <em>src</em>。</p>
+<p>所有 Go 项目都应该依次在 <em>src</em> 里面创建。我们在 <em>src</em> 里面创建一个目录 <em>hello</em> 来放置整个 hello world 项目。</p>
 <p>创建上述目录之后，其目录结构如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">C:\Users\&#123;YourName&#125;\go\src\hello<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>在我们刚刚创建的 hello 目录下，在 <strong>helloworld.go</strong> 文件里保存下面的程序。</p>
+<p>在我们刚刚创建的 hello 目录下，在 <code>helloworld.go</code> 文件里保存下面的程序。</p>
 <pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
 
 <span class="token keyword">import</span> <span class="token string">"fmt"</span>
@@ -142,15 +142,15 @@
 
 <h1 id="运行Go程序"><a href="#运行Go程序" class="headerlink" title="运行Go程序"></a>运行Go程序</h1><p>运行 Go 程序有多种方式，我们下面依次介绍。</p>
 <ol>
-<li>使用 <strong>go run</strong> 命令 - 在命令提示符旁，输入 <code>go run &#123;workspacepath&#125;/src/hello/helloworld.go</code>。</li>
+<li>使用 <em>go run</em> 命令 - 在命令提示符旁，输入 <code>go run &#123;workspacepath&#125;/src/hello/helloworld.go</code>。</li>
 </ol>
-<p>上述命令中的 <strong>workspacepath</strong> 应该替换为你自己的工作区路径（Windows 下的 <strong>C:&#x2F;Users&#x2F;{YourName}&#x2F;go</strong>，Linux 或 Mac 下的 <strong>$HOME&#x2F;go</strong>）。</p>
+<p>上述命令中的 <em>{workspacepath}</em> 应该替换为你自己的工作区路径（Windows 下的 <em>C:&#x2F;Users&#x2F;{YourName}&#x2F;go</em>，Linux 或 Mac 下的 <em>$HOME&#x2F;go</em>）。</p>
 <p>在控制台上会看见 <code>Hello World</code> 的输出。</p>
 <ol start="2">
-<li>使用 <strong>go install</strong> 命令 - 运行 <code>go install hello</code>，接着可以用 <code>&#123;workspacepath&#125;/bin/hello</code> 来运行该程序。</li>
+<li>使用 <em>go install</em> 命令 - 运行 <code>go install hello</code>，接着可以用 <code>&#123;workspacepath&#125;/bin/hello</code> 来运行该程序。</li>
 </ol>
-<p>上述命令中的 <strong>workspacepath</strong> 应该替换为你自己的工作区路径（Windows 下的 <strong>C:&#x2F;Users&#x2F;{YourName}&#x2F;go</strong>，Linux 或 Mac 下的 <strong>$HOME&#x2F;go</strong>）。</p>
-<p>当你输入 <strong>go install hello</strong> 时，go 工具会在工作区中搜索 hello 包（hello 称之为包，我们后面会更加详细地讨论包）。接下来它会在工作区的 bin 目录下，创建一个名为 <code>hello</code>（Windows 下名为 <code>hello.exe</code>）的二进制文件。运行 <strong>go install hello</strong> 后，其目录结构如下所示：</p>
+<p>上述命令中的 <em>{workspacepath}</em> 应该替换为你自己的工作区路径（Windows 下的 <em>C:&#x2F;Users&#x2F;{YourName}&#x2F;go</em>，Linux 或 Mac 下的 <em>$HOME&#x2F;go</em>）。</p>
+<p>当你输入 <em>go install hello</em> 时，go 工具会在工作区中搜索 hello 包（hello 称之为包，我们后面会更加详细地讨论包）。接下来它会在工作区的 bin 目录下，创建一个名为 <code>hello</code>（Windows 下名为 <code>hello.exe</code>）的二进制文件。运行 <em>go install hello</em> 后，其目录结构如下所示：</p>
 <pre class="line-numbers language-none"><code class="language-none">C:\Users\&#123;YourName&#125;\go\bin\hello.exe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <ol start="3">
@@ -177,16 +177,19 @@ Hello World<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>现在简单介绍每一行大概都做了些什么，在以后的教程中还会深入探讨每个部分。</p>
-<p><strong>package main - 每一个 Go 文件都应该在开头进行 <code>package name</code> 的声明</strong>（译注：只有可执行程序的包名应当为 main）。包（Packages）用于代码的封装与重用，这里的包名称是<code>main</code>。</p>
-<p><strong>import “fmt”</strong> - 我们引入了 fmt 包，用于在 main 函数里面打印文本到标准输出。</p>
-<p><strong>func main()</strong> - main 是一个特殊的函数。整个程序就是从 main 函数开始运行的。<strong>main 函数必须放置在 main 包中</strong>。<code>&#123;</code> 和 <code>&#125;</code> 分别表示 main 函数的开始和结束部分。</p>
-<p><strong>fmt.Println(“Hello World”)</strong> - <strong>fmt</strong> 包中的 <strong>Println</strong> 函数用于把文本写入标准输出。</p>
+<p><em>package main - 每一个 Go 文件都应该在开头进行 package name 的声明</em>（译注：只有可执行程序的包名应当为 main）。包（Packages）用于代码的封装与重用，这里的包名称是<code>main</code>。</p>
+<p><em>import “fmt”</em> - 我们引入了 fmt 包，用于在 main 函数里面打印文本到标准输出。</p>
+<p><em>func main()</em> - main 是一个特殊的函数。整个程序就是从 main 函数开始运行的。<em>main 函数必须放置在 main 包中</em>。<code>&#123;</code> 和 <code>&#125;</code> 分别表示 main 函数的开始和结束部分。</p>
+<p><em>fmt.Println(“Hello World”)</em> - <em>fmt</em> 包中的 <em>Println</em> 函数用于把文本写入标准输出。</p>
 <p>现在你可以进入<a href="">《Golang tutorial series》 3.变量</a> 中学习Golang 中的变量。</p>
 <p>请提供给我们宝贵的反馈和意见。感谢您的阅读。</p>
 <hr>
 
+<p>目录：<a href="./34725805bd6c.html">目录</a></p>
 <p>上一教程：<a href="./4a17b880c4ad.html">1.介绍与安装</a></p>
 <p>下一教程：<a href="">3.变量</a></p>
+<hr>
+
 
 	  <div class="article-footer-copyright">
 
